@@ -1,7 +1,8 @@
 # Curso FastAPI con SQL Alchemy
 https://www.youtube.com/watch?v=6eVj33l5e9M&t=1s&ab_channel=FaztCode
 
-https://youtu.be/6eVj33l5e9M?t=2303
+https://www.youtube.com/watch?v=_eWEmRWhk9A&ab_channel=FaztCode
+
 ```
 conda activate fastapi01
 ```
@@ -31,6 +32,7 @@ uvicorn app:app --reload
 ```
 
 ### sqlAlchemy
+Docs: https://docs.sqlalchemy.org/en/14/core/tutorial.html#version-check
 ```
 pip install sqlalchemy pymysql cryptography
 ```
