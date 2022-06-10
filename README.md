@@ -1,7 +1,10 @@
 # Curso FastAPI con SQL Alchemy
 https://www.youtube.com/watch?v=6eVj33l5e9M&t=1s&ab_channel=FaztCode
 
-https://youtu.be/6eVj33l5e9M?t=732
+https://youtu.be/6eVj33l5e9M?t=2303
+```
+conda activate fastapi01
+```
 
 ## Preparar entorno virtual
     
@@ -25,4 +28,16 @@ pip install fastapi uvicorn
 
 uvicorn [filename]:[objeto] --reload
 uvicorn app:app --reload
+```
+
+### sqlAlchemy
+```
+pip install sqlalchemy pymysql cryptography
+```
+
+#### Crear Base de datos con docker
+engine = create_engine("mysql+pymysql://root:fastapiPass@localhost:3306/storedb")
+
+```
+ docker run --detach --name fastapi-mariadb -v C:\Users\franc\Documents\Cursos\FastAPI_SQLAlchemy_fazt\datadb:/var/lib/mysql -e MARIADB_ROOT_PASSWORD=fastapiPass -e MARIADB_DATABASE=storedb -e MARIADB_MYSQL_LOCALHOST_USER=1 -p 3306:3306 -d mariadb:latest
 ```
